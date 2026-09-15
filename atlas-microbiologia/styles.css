@@ -308,7 +308,7 @@ p { color: var(--text-muted); }
 
 .hero-mockup-wrapper {
   position: relative;
-  max-width: 580px;
+  max-width: 680px;
   margin: 0 auto 35px;
 }
 
@@ -405,7 +405,7 @@ section {
 
 .transformation-header {
   text-align: center;
-  max-width: 580px;
+  max-width: 680px;
   margin: 0 auto 35px;
 }
 
@@ -898,7 +898,7 @@ section {
 }
 
 .includes-mockup-wrapper {
-  max-width: 580px;
+  max-width: 680px;
   margin: 0 auto 26px;
 }
 
@@ -1454,7 +1454,7 @@ section {
   display: flex;
   gap: 30px;
   align-items: center;
-  max-width: 580px;
+  max-width: 680px;
   margin: 0 auto;
 }
 
