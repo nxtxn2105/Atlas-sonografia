@@ -1,0 +1,30 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/microbiologia",
+      "destination": "/atlas-microbiologia/public/index.html"
+    },
+    {
+      "source": "/microbiologia/styles.css",
+      "destination": "/atlas-microbiologia/public/styles.css"
+    },
+    {
+      "source": "/microbiologia/assets/(.*)",
+      "destination": "/atlas-microbiologia/public/assets/$1"
+    },
+    {
+      "source": "/microbiologia/(.*)",
+      "destination": "/atlas-microbiologia/public/$1"
+    },
+    {
+      "source": "/ultrassonografia",
+      "destination": "/atlas-ultrassonografia/public/index.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
