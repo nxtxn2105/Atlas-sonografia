@@ -1,4 +1,10 @@
 {
-  "framework": null,
-  "cleanUrls": true
+  "cleanUrls": true,
+  "outputDirectory": "public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
