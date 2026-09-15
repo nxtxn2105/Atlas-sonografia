@@ -3,7 +3,7 @@
 // ============================================
 const CONFIG = {
   CHECKOUT_BASICO: 'https://pay.lowify.com.br/checkout.php?product_id=XuPveQ',
-  CHECKOUT_UPGRADE: 'https://pay.kiwify.com.br/SEU_CHECKOUT_UPGRADE_30',
+  CHECKOUT_UPGRADE: 'https://pay.lowify.com.br/checkout.php?product_id=1jqniL',
   CHECKOUT_COMPLETO: 'https://pay.lowify.com.br/checkout.php?product_id=zmGeEB',
   CHECKOUT_DOWNSELL: 'https://pay.kiwify.com.br/SEU_CHECKOUT_DOWNSELL',
   OPEN_IN_NEW_TAB: false // true: abre nova aba | false: redirecionamento direto (maior conversão)
@@ -21,7 +21,7 @@ function redirectToCheckout(plan, event) {
   }
 
   const isCompleto = plan === 'completo' || (typeof plan === 'string' && (plan.includes('COMPLETO') || plan.includes('zmGeEB')));
-  const isUpgrade = plan === 'upgrade' || (typeof plan === 'string' && plan.includes('UPGRADE'));
+  const isUpgrade = plan === 'upgrade' || (typeof plan === 'string' && (plan.includes('UPGRADE') || plan.includes('1jqniL')));
   const isDownsell = plan === 'downsell' || (typeof plan === 'string' && plan.includes('DOWNSELL'));
   
   let targetUrl = (plan && plan.startsWith('http')) 
