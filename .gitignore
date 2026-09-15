@@ -1,18 +1,20 @@
-# System files
+# System
 .DS_Store
 Thumbs.db
 
-# Node
+# Node Local Dev
 node_modules/
-npm-debug.log*
+package.json
+package-lock.json
+server.mjs
+local_server.mjs
 
-# Python
+# Python & Scraping
 __pycache__/
 *.pyc
-
-# Local debug
-grid_debug.jpg
-mockup_crop_test.png
-test_ok.txt
-fetch.py
+*.py
 ref.html
+slides_data.json
+
+# Local dev dist folder (everything is deployed from root)
+dist/
