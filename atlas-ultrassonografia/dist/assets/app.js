@@ -2,7 +2,7 @@
 // CONFIGURAÇÕES & CHECKOUT REDIRECTION ENGINE
 // ============================================
 const CONFIG = {
-  CHECKOUT_BASICO: 'https://pay.kiwify.com.br/SEU_CHECKOUT_BASICO',
+  CHECKOUT_BASICO: 'https://pay.lowify.com.br/checkout.php?product_id=XuPveQ',
   CHECKOUT_UPGRADE: 'https://pay.kiwify.com.br/SEU_CHECKOUT_UPGRADE_30',
   CHECKOUT_COMPLETO: 'https://pay.kiwify.com.br/SEU_CHECKOUT_COMPLETO',
   CHECKOUT_DOWNSELL: 'https://pay.kiwify.com.br/SEU_CHECKOUT_DOWNSELL',
@@ -124,12 +124,12 @@ if (btnUpgradeDecline) {
 // Global Event Delegation para Checkout e Navegação
 document.addEventListener('click', function(e) {
   // A. Botões de Checkout
-  const checkoutBtn = e.target.closest('[data-plan], .plan-cta, a[href*="kiwify"], a[href*="payt"], a[href*="checkout"]');
+  const checkoutBtn = e.target.closest('[data-plan], .plan-cta, a[href*="kiwify"], a[href*="lowify"], a[href*="payt"], a[href*="checkout"]');
   if (checkoutBtn && !checkoutBtn.closest('#upgrade-modal')) {
     const plan = checkoutBtn.getAttribute('data-plan') || (checkoutBtn.href && checkoutBtn.href.includes('COMPLETO') ? 'completo' : (checkoutBtn.href && checkoutBtn.href.includes('DOWNSELL') ? 'downsell' : 'basico'));
     
     // Intercepta clique no Plano Básico para abrir modal de upgrade
-    if (plan === 'basico' || (checkoutBtn.href && checkoutBtn.href.includes('BASICO'))) {
+    if (plan === 'basico' || (checkoutBtn.href && checkoutBtn.href.includes('XuPveQ')) || (checkoutBtn.href && checkoutBtn.href.includes('BASICO'))) {
       e.preventDefault();
       e.stopPropagation();
       openUpgradeModal();
