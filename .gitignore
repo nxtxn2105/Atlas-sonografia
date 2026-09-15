@@ -16,5 +16,5 @@ __pycache__/
 ref.html
 slides_data.json
 
-# Local dev dist folder (everything is deployed from root)
+# Local dev dist folder
 dist/
