@@ -1,0 +1,149 @@
+[
+  {
+    "src": "assets/pages/01_geral.webp",
+    "page": "01",
+    "title": "Capa Oficial do Atlas",
+    "cat": "geral",
+    "desc": "Leitura e Interpretação de Placas"
+  },
+  {
+    "src": "assets/pages/02_geral.webp",
+    "page": "02",
+    "title": "O Método dos 4 Passos Analíticos",
+    "cat": "geral",
+    "desc": "Observar, Comparar, Contextualizar e Laudar"
+  },
+  {
+    "src": "assets/pages/03_morfologia.webp",
+    "page": "03",
+    "title": "O Que Observar Primeiro na Placa",
+    "cat": "morfologia",
+    "desc": "Tamanho, quantidade, fundo e padrão global"
+  },
+  {
+    "src": "assets/pages/04_morfologia.webp",
+    "page": "04",
+    "title": "Forma & Contorno das Colônias",
+    "cat": "morfologia",
+    "desc": "Circular, irregular, filamentosa e puntiforme"
+  },
+  {
+    "src": "assets/pages/05_morfologia.webp",
+    "page": "05",
+    "title": "Tipos de Margens e Bordas",
+    "cat": "morfologia",
+    "desc": "Inteira, ondulada, lobada e espraiada"
+  },
+  {
+    "src": "assets/pages/06_morfologia.webp",
+    "page": "06",
+    "title": "Perfil de Elevação Colonial",
+    "cat": "morfologia",
+    "desc": "Plana, elevada, convexa, umbonada e crateriforme"
+  },
+  {
+    "src": "assets/pages/07_morfologia.webp",
+    "page": "07",
+    "title": "Superfície & Textura Aparente",
+    "cat": "morfologia",
+    "desc": "Lisa, rugosa, brilhante, fosca e mucoide"
+  },
+  {
+    "src": "assets/pages/08_morfologia.webp",
+    "page": "08",
+    "title": "Cor & Pigmentação Aparente",
+    "cat": "morfologia",
+    "desc": "Pigmentos endógenos vs difusíveis no meio"
+  },
+  {
+    "src": "assets/pages/09_padroes.webp",
+    "page": "09",
+    "title": "Distribuição & Padrão de Crescimento",
+    "cat": "padroes",
+    "desc": "Colônias isoladas, aglomeradas e confluentes"
+  },
+  {
+    "src": "assets/pages/10_padroes.webp",
+    "page": "10",
+    "title": "Não Confunda Padrões Semelhantes",
+    "cat": "padroes",
+    "desc": "Diferenciação visual de falsos positivos"
+  },
+  {
+    "src": "assets/pages/11_padroes.webp",
+    "page": "11",
+    "title": "Placa Adequada vs Limitações",
+    "cat": "padroes",
+    "desc": "Critérios de contabilidade e sobreposição"
+  },
+  {
+    "src": "assets/pages/12_padroes.webp",
+    "page": "12",
+    "title": "Crescimento Isolado vs Abundante",
+    "cat": "padroes",
+    "desc": "Avaliação de diluição seriada e contagem"
+  },
+  {
+    "src": "assets/pages/13_padroes.webp",
+    "page": "13",
+    "title": "Padrão Homogêneo vs Múltiplos Padrões",
+    "cat": "padroes",
+    "desc": "Cultura pura vs contaminação polimicrobiana"
+  },
+  {
+    "src": "assets/pages/14_contexto.webp",
+    "page": "14",
+    "title": "Interferências da Matriz Alimentar",
+    "cat": "contexto",
+    "desc": "Gordura, partículas e precipitados no ágar"
+  },
+  {
+    "src": "assets/pages/16_contexto.webp",
+    "page": "16",
+    "title": "A Evidência Visual & Seus Limites",
+    "cat": "contexto",
+    "desc": "Interpretação presuntiva responsável"
+  },
+  {
+    "src": "assets/pages/19_laudos.webp",
+    "page": "19",
+    "title": "Descreva Antes de Nomear",
+    "cat": "laudos",
+    "desc": "Raciocínio metodológico para laudos seguros"
+  },
+  {
+    "src": "assets/pages/32_desafios.webp",
+    "page": "32",
+    "title": "Desafio Prático: Área vs Contagem",
+    "cat": "desafios",
+    "desc": "Caso real de análise quantitativa"
+  },
+  {
+    "src": "assets/pages/38_laudos.webp",
+    "page": "38",
+    "title": "Roteiro de Laudo & Interpretação",
+    "cat": "laudos",
+    "desc": "Estruturação de conclusões com evidência"
+  },
+  {
+    "src": "assets/pages/39_meios.webp",
+    "page": "39",
+    "title": "Meios de Uso Geral (PCA, TSA)",
+    "cat": "meios",
+    "desc": "Amplo alcance e contagem padrão"
+  },
+  {
+    "src": "assets/pages/42_meios.webp",
+    "page": "42",
+    "title": "Meios Seletivos & Diferenciais",
+    "cat": "meios",
+    "desc": "Inibição seletiva e reações indicadoras"
+  },
+  {
+    "src": "assets/pages/44_meios.webp",
+    "page": "44",
+    "title": "Meios Cromogênicos na Indústria",
+    "cat": "meios",
+    "desc": "Substratos enzimáticos e detecção rápida"
+  }
+]
