@@ -760,14 +760,16 @@ section {
 }
 
 .section-callout .primary-cta {
-  background: #ffffff;
-  color: var(--blue-dark);
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+  background: #16a34a;
+  color: #ffffff;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
 }
 
 .section-callout .primary-cta:hover {
-  background: #f8fafc;
+  background: #15803d;
+  color: #ffffff;
   transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(22, 163, 74, 0.55);
 }
 
 /* Section: Audience (Deep Navy Blue Band) */
