@@ -4,7 +4,7 @@
 const CONFIG = {
   CHECKOUT_BASICO: 'https://pay.lowify.com.br/checkout.php?product_id=XuPveQ',
   CHECKOUT_UPGRADE: 'https://pay.kiwify.com.br/SEU_CHECKOUT_UPGRADE_30',
-  CHECKOUT_COMPLETO: 'https://pay.kiwify.com.br/SEU_CHECKOUT_COMPLETO',
+  CHECKOUT_COMPLETO: 'https://pay.lowify.com.br/checkout.php?product_id=zmGeEB',
   CHECKOUT_DOWNSELL: 'https://pay.kiwify.com.br/SEU_CHECKOUT_DOWNSELL',
   OPEN_IN_NEW_TAB: false // true: abre nova aba | false: redirecionamento direto (maior conversão)
 };
@@ -20,7 +20,7 @@ function redirectToCheckout(plan, event) {
     event.stopPropagation();
   }
 
-  const isCompleto = plan === 'completo' || (typeof plan === 'string' && plan.includes('COMPLETO'));
+  const isCompleto = plan === 'completo' || (typeof plan === 'string' && (plan.includes('COMPLETO') || plan.includes('zmGeEB')));
   const isUpgrade = plan === 'upgrade' || (typeof plan === 'string' && plan.includes('UPGRADE'));
   const isDownsell = plan === 'downsell' || (typeof plan === 'string' && plan.includes('DOWNSELL'));
   
@@ -126,7 +126,7 @@ document.addEventListener('click', function(e) {
   // A. Botões de Checkout
   const checkoutBtn = e.target.closest('[data-plan], .plan-cta, a[href*="kiwify"], a[href*="lowify"], a[href*="payt"], a[href*="checkout"]');
   if (checkoutBtn && !checkoutBtn.closest('#upgrade-modal')) {
-    const plan = checkoutBtn.getAttribute('data-plan') || (checkoutBtn.href && checkoutBtn.href.includes('COMPLETO') ? 'completo' : (checkoutBtn.href && checkoutBtn.href.includes('DOWNSELL') ? 'downsell' : 'basico'));
+    const plan = checkoutBtn.getAttribute('data-plan') || (checkoutBtn.href && (checkoutBtn.href.includes('COMPLETO') || checkoutBtn.href.includes('zmGeEB')) ? 'completo' : (checkoutBtn.href && checkoutBtn.href.includes('DOWNSELL') ? 'downsell' : 'basico'));
     
     // Intercepta clique no Plano Básico para abrir modal de upgrade
     if (plan === 'basico' || (checkoutBtn.href && checkoutBtn.href.includes('XuPveQ')) || (checkoutBtn.href && checkoutBtn.href.includes('BASICO'))) {
